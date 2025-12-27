@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="hy">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YevYev Պատվեր</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="yevyev-container">
+        <div class="booking-card">
+            <div class="brand-line"></div>
+            <h2>ԱՄՐԱԳՐՈՒՄ</h2>
+            
+            <form id="taxiForm">
+                <div class="field">
+                    <label>Ուղղություն</label>
+                    <select id="route" required>
+                        <option value="" disabled selected>Ընտրեք ուղղությունը...</option>
+                        <option value="GY-ER">Գյումրի - Երևան</option>
+                        <option value="ER-GY">Երևան - Գյումրի</option>
+                        <option value="VN-ER">Վանաձոր - Երևան</option>
+                        <option value="ER-VN">Երևան - Վանաձոր</option>
+                    </select>
+                </div>
+
+                <div class="field">
+                    <label>Ուղևորների քանակ</label>
+                    <input type="number" id="passengers" min="1" max="8" value="1" required>
+                </div>
+
+                <div class="field">
+                    <label>Ամսաթիվ</label>
+                    <input type="date" id="date" required>
+                </div>
+
+                <div class="field">
+                    <label>Հեռախոսահամար</label>
+                    <input type="tel" id="phone" placeholder="+374 __ ___ ___" required>
+                </div>
+
+                <button type="submit" id="submitBtn">ՊԱՏՎԻՐԵԼ</button>
+            </form>
+            <div id="responseMessage"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

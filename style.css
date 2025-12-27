@@ -1,0 +1,90 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.booking-card {
+    background: white;
+    width: 350px;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    position: relative;
+}
+
+.brand-line {
+    width: 100%;
+    height: 6px;
+    background: #ffcc00;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 15px 15px 0 0;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 25px;
+    letter-spacing: 1px;
+}
+
+.field {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-size: 12px;
+    font-weight: bold;
+    color: #666;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+select, input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 14px;
+    transition: 0.2s;
+}
+
+select:focus, input:focus {
+    border-color: #ffcc00;
+    outline: none;
+    box-shadow: 0 0 5px rgba(255, 204, 0, 0.4);
+}
+
+#submitBtn {
+    width: 100%;
+    padding: 15px;
+    background: #ffcc00;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 10px;
+}
+
+#submitBtn:hover {
+    background: #000;
+    color: #ffcc00;
+}
+
+#responseMessage {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+}
